@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn-mas{
+    display: none;
+}
+.container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .icon-mas2{
+    display: block;
+    text-decoration: none;
+    background-color: red;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background-color: rgb(9, 237, 245);
+   
+}
+.redes a img:hover{  
+    filter: invert(1);
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.icon-mas2{
+    cursor: pointer;
+    background-color: rgb(233, 62, 62);
+}
+.icon-mas2 img{
+    height: 40px;
+    width: 30px;
+}
+#btn-mas:checked~ .btn-mas img{
+text-align: center;
+    width: 60px;
+    height:60px;
+    transform: rotate(137deg);
+}
